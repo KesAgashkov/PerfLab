@@ -11,10 +11,8 @@ arr = array('i', range(1, args.n + 1)) * args.m
 
 start = 0
 lst = []
-for _ in range(args.m+1):
+for _ in range(args.m + 1):
     lst.append(arr[start:start + args.m])
     start += args.m - 1
 
 print("".join([str(el[0]) for el in lst]))
-
-
