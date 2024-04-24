@@ -9,7 +9,7 @@ parser.add_argument("points", type=str)
 
 args = parser.parse_args()
 
-with open(args.data_initial) as data:
+# with open(args.data_initial) as data:
     lst = []
     for el in csv.reader(data):
         lst.extend(el)
